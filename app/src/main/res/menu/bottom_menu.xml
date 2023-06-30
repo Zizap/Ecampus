@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottomMenuAccount"
+        android:icon="@drawable/account"
+        android:title="@string/account"
+        app:showAsAction="ifRoom"
+        >
+    </item>
+
+    <item
+        android:id="@+id/bottomMenuHome"
+        android:icon="@drawable/home"
+        android:title="@string/home"
+        app:showAsAction="ifRoom">
+    </item>
+
+    <item
+        android:id="@+id/bottomMenuSchedule"
+        android:icon="@drawable/schedule"
+        android:title="@string/navShedule"
+        app:showAsAction="ifRoom">
+    </item>
+
+
+
+
+
+</menu>

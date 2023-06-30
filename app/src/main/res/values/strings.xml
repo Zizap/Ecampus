@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="app_name">Ecampus</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="navShedule">Расписание</string>
+    <string name="account">Профиль</string>
+    <string name="home">Дом</string>
+    <string name="monday">Понедельник</string>
+    <string name="tuesday">Вторник</string>
+    <string name="wednesday">Среда</string>
+    <string name="thursday">Четверг</string>
+    <string name="friday">Пятница</string>
+    <string name="saturday">Суббота</string>
+    <string name="choose_inst">Выберите университет</string>
+    <string name="choose_a_specialty">Выберите специальность</string>
+    <string name="choose_a_group">Выберите группу</string>
+</resources>
