@@ -47,6 +47,7 @@ class Lesson(private val getScheduleModel: GetScheduleModel) : Fragment() {
                 TabLayoutMediator.TabConfigurationStrategy{ tab, position ->
                     when(position){
                         0 -> {
+                            Log.e("TabLayoutMediator","Работает")
                             //tab.setIcon(R.drawable.dragon)
                             tab.text = getString(R.string.monday)
                         }

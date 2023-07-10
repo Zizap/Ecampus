@@ -4,9 +4,11 @@ import com.example.ecampus.data.models.institutesModels.InstitutesList
 import com.example.ecampus.data.models.getModels.GetSpecialtiesModel
 import com.example.ecampus.data.models.SpecialtiesModels.SpecialtiesList
 import com.example.ecampus.data.models.getModels.GetScheduleModel
+import com.example.ecampus.data.models.getModels.GetSearchModel
 import com.example.ecampus.data.models.groupsModel.GroupsList
 import com.example.ecampus.data.models.pairTimesModels.PairTimesList
 import com.example.ecampus.data.models.scheduleModel.ScheduleApiModel
+import com.example.ecampus.data.models.searchModel.SearchApiModel
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.POST
@@ -27,6 +29,9 @@ interface ApiService {
 
     @POST("Schedule/GetGroupSchedule")
     fun getSchedule(@Body specialties: GetScheduleModel): Call<ScheduleApiModel>
+
+    @POST("Schedule/Search")
+    fun search(@Body search: GetSearchModel): Call<SearchApiModel>
 
 
 }

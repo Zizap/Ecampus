@@ -9,7 +9,6 @@ import com.example.ecampus.R
 import com.example.ecampus.data.models.getModels.GetSpecialtiesModel
 import com.example.ecampus.data.models.SpecialtiesModels.SpecialtiesApiModel
 import com.example.ecampus.databinding.InstitutesItemBinding
-import com.example.ecampus.databinding.SpecialtiesItemBinding
 
 class SpecialtiesAdapter(private val getSpecialtiesModel: GetSpecialtiesModel, private val loadGroups:(GetSpecialtiesModel,String)->Unit): RecyclerView.Adapter<SpecialtiesHolder>() {
 
@@ -29,7 +28,7 @@ class SpecialtiesAdapter(private val getSpecialtiesModel: GetSpecialtiesModel, p
     override fun onBindViewHolder(holder: SpecialtiesHolder, position: Int) {
         val animation = AnimationUtils.loadAnimation(holder.itemView.context, R.anim.recycler_item_anim)
         holder.itemView.startAnimation(animation)
-        holder.bind(specialtiesList[position],getSpecialtiesModel,loadGroups)
+        holder.bind(specialtiesList[position],getSpecialtiesModel,loadGroups,specialtiesList[specialtiesList.size-1])
     }
 
     fun setList(institutes: ArrayList<SpecialtiesApiModel>){
@@ -44,7 +43,17 @@ class SpecialtiesHolder(val binding: InstitutesItemBinding): RecyclerView.ViewHo
 
     fun bind(specialties: SpecialtiesApiModel,
              getSpecialtiesModel: GetSpecialtiesModel,
-             loadGroups:(GetSpecialtiesModel,String)->Unit){
+             loadGroups:(GetSpecialtiesModel,String)->Unit,
+             specialtiesLast:SpecialtiesApiModel){
+
+        when {
+            specialties.name == specialtiesLast.name -> {
+                binding.nameInstitutes.setBackgroundResource(R.drawable.button_bottom_style)
+            }
+            else -> {
+                binding.nameInstitutes.setBackgroundResource(R.drawable.button_style)
+            }
+        }
 
         binding.nameInstitutes.text = specialties.name.toString()
 

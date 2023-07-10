@@ -8,9 +8,9 @@
         android:title="@string/navShedule">
     </item>
     <item
-
-        android:icon="@drawable/schedule"
-        android:title="@string/navShedule">
+        android:id="@+id/maps"
+        android:icon="@drawable/maps"
+        android:title="@string/maps">
     </item>
     <item
 

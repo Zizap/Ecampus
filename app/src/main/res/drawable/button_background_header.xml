@@ -4,9 +4,14 @@
 
     <solid
 
-        android:color="@color/blue_transperent">
+        android:color="@color/blue_dark">
 
     </solid>
+
+    <corners
+        android:topLeftRadius="16dp"
+        android:topRightRadius="16dp">
+    </corners>
     
 
     <stroke

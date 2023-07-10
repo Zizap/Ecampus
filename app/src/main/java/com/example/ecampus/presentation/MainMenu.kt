@@ -1,17 +1,20 @@
 package com.example.ecampus.presentation
 
+
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.FragmentActivity
 import com.example.ecampus.R
+import com.example.ecampus.data.models.getModels.GetSpecialtiesModel
 import com.example.ecampus.databinding.FragmentMainMenuBinding
 import com.example.ecampus.presentation.scheduleFragments.Institute
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 
-class MainMenu : BottomSheetDialogFragment() {
+class MainMenu() : BottomSheetDialogFragment() {
 
     private var binding:FragmentMainMenuBinding? = null
 
@@ -21,11 +24,20 @@ class MainMenu : BottomSheetDialogFragment() {
     ): View? {
         binding = FragmentMainMenuBinding.inflate(inflater,container,false)
 
+
+
+
         binding?.mainMenuNav?.setNavigationItemSelectedListener { menuItem ->
             when(menuItem.itemId) {
                 R.id.schedule -> {
                     (context as FragmentActivity).supportFragmentManager.beginTransaction().replace(
                         R.id.contentFragment, Institute()
+                    ).commit()
+                    dismiss()
+                }
+                R.id.maps -> {
+                    (context as FragmentActivity).supportFragmentManager.beginTransaction().replace(
+                        R.id.contentFragment, Maps()
                     ).commit()
                     dismiss()
                 }

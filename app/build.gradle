@@ -39,6 +39,7 @@ android {
 
 dependencies {
 
+
     def room_version = "2.5.1"
     def lifecycle_version = "2.6.1"
     def arch_version = "2.2.0"
@@ -86,9 +87,12 @@ dependencies {
     //koin
     implementation "io.insert-koin:koin-android:$koin_android_version"
 
-    ///Navigation component
+    //Navigation component
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    //Yandex Maps SDK
+    implementation("com.yandex.android:maps.mobile:4.3.2-lite")
 
     //daimajia
     implementation 'com.daimajia.androidanimations:library:2.4@aar'

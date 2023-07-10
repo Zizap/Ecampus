@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/stavropol"
+        android:title="@string/stavropol">
+    </item>
+    <item
+        android:id="@+id/piatigorsk"
+        android:title="@string/piatigorsk">
+    </item>
+    <item
+        android:id="@+id/nevinnomissk"
+        android:title="@string/nevinnomissk">
+    </item>
+
+
+</menu>

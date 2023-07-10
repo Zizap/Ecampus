@@ -5,6 +5,7 @@ import com.example.ecampus.presentation.di.groupsDI
 import com.example.ecampus.presentation.di.institutesDI
 import com.example.ecampus.presentation.di.pairTimesDI
 import com.example.ecampus.presentation.di.scheduleDI
+import com.example.ecampus.presentation.di.searchDI
 import com.example.ecampus.presentation.di.specialtiesDI
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -22,7 +23,8 @@ class App:Application() {
                 groupsDI,
                 specialtiesDI,
                 pairTimesDI,
-                scheduleDI)
+                scheduleDI,
+                searchDI)
         }
     }
 

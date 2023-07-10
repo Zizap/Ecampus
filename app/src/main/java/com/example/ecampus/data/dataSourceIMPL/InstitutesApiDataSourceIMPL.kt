@@ -36,6 +36,7 @@ class InstitutesApiDataSourceIMPL():InstitutesApiDataSource {
                 if (response.isSuccessful) {
                     response.body()?.forEach{ item ->
                         data.add(item)
+                        Log.e("Institute","${item}")
                     }
                     data.let { onSuccess(it) } ?: onError(Throwable("Empty response"))
                 }

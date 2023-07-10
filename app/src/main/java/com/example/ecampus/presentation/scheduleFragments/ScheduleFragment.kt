@@ -32,7 +32,6 @@ class ScheduleFragment(private val getScheduleModel: GetScheduleModel,private va
     ): View? {
         binding = FragmentScheduleBinding.inflate(inflater,container,false)
 
-        Log.e("OPAJOPA",getScheduleModel.Id.toString())
         initRecyclerSchedule()
         loadSchedule(getScheduleModel)
 

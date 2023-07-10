@@ -7,6 +7,11 @@
         android:color="@color/blue_transperent">
 
     </solid>
+
+    <corners
+        android:bottomLeftRadius="16dp"
+        android:bottomRightRadius="16dp">
+    </corners>
     
 
     <stroke

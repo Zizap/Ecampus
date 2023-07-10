@@ -16,4 +16,17 @@
     <string name="choose_inst">Выберите университет</string>
     <string name="choose_a_specialty">Выберите специальность</string>
     <string name="choose_a_group">Выберите группу</string>
+    <string name="search">Поиск</string>
+    <string name="teachers">Преподаватели</string>
+    <string name="load_more">Загрузить еще</string>
+    <string name="groups">Группы</string>
+    <string name="room">Аудитории</string>
+    <string name="teacher">Преподаватели</string>
+    <string name="maps">Карта корпусов</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="stavropol">Ставрополь</string>
+    <string name="piatigorsk">Пятигорск</string>
+    <string name="nevinnomissk">Невинномысск</string>
+    <string name="trafficButton">Пробки</string>
+    <string name="there_i">Где я</string>
 </resources>
